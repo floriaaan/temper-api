@@ -13,7 +13,7 @@ class ProbeController extends Controller
     {
         try {
             $probe = Probe::find($id);
-            $lastMeasure = Measure::where('probe', $id)->orderBy('id', 'desc')->firstOrFail();
+            $lastMeasure = Measure::where('probe', $id)->orderBy('id', 'desc')->first();
 
             $data = [
                 'id' => $probe->id,
@@ -25,9 +25,9 @@ class ProbeController extends Controller
                     'lat' => $probe->gps_lat
                 ],
                 'lastmeasure' => [
-                    'temperature' => $lastMeasure->temperature,
-                    'humidity' => $lastMeasure->humidity,
-                    'date' => $lastMeasure->date
+                    'temperature' => $lastMeasure != null ? $lastMeasure->temperature : null,
+                    'humidity' => $lastMeasure != null ? $lastMeasure->humidity : null,
+                    'date' => $lastMeasure != null ? $lastMeasure->date : null
                 ]
             ];
 
