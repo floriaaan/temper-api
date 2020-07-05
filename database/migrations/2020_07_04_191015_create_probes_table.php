@@ -16,7 +16,7 @@ class CreateProbesTable extends Migration
         Schema::create('probes', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            $table->string('catgory')->nullable();
+            $table->string('category')->nullable();
             $table->boolean('state')->default(1);
             $table->double('gps_lon')->nullable();
             $table->double('gps_lat')->nullable();
