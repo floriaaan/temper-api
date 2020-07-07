@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Measure;
 use App\Probe;
 use App\User;
+use Illuminate\Http\Request;
 
 class ProbeController extends Controller
 {
@@ -112,5 +113,50 @@ class ProbeController extends Controller
                 500
             );
         }
+    }
+
+    public function store(Request $request) {
+        $this->validate($request, [
+            'name' => '',
+            'user' => 'exists:users,id|required',
+            'category' => '',
+            'gps_lon' => '',
+            'gps_lat' => '',
+        ]);
+
+        $post = $request->input();
+
+        try {
+            $probe = new Probe();
+
+            $probe->name = (isset($post['name']) && $post['name'] != '') ? $post['name'] : null;
+            $probe->category = (isset($post['category']) && $post['category'] != '') ? $post['category'] : null;
+            $probe->gps_lon = (isset($post['gps_lon']) && $post['gps_lon'] != '') ? $post['gps_lon'] : null;
+            $probe->gps_lat = (isset($post['gps_lat']) && $post['gps_lat'] != '') ? $post['gps_lat'] : null;
+
+            $probe->user = $post['user'];
+
+            $probe->save();
+            
+            return response()->json(
+                [
+                    'response' => [
+                        'data' => $probe,
+                        'user' => User::find($probe->user)
+                    ],
+                    'error' => null
+                ],
+                201
+            );
+        } catch (\Exception $e) {
+            return response()->json(
+                [
+                    'response' => null,
+                    'error'    => $e
+                ],
+                500
+            );
+        }
+
     }
 }

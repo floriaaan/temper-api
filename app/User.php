@@ -22,6 +22,22 @@ class User extends Model
      * @var array
      */
     protected $hidden = [
-        'password',
+        'password', 'token'
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        // auto-sets values on creation
+        static::creating(function ($query) {
+            $query->token = bin2hex(random_bytes(16));
+        });
+    }
+
+    public function password(String $str) {
+        $this->password = password_hash($str, PASSWORD_BCRYPT);
+        $this->save();
+    }
+
 }

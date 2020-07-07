@@ -21,12 +21,18 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
 
     $router->group(['prefix' => 'probe'], function () use ($router) {
         $router->get('{id}',  ['uses' => 'ProbeController@get']);
+        $router->post('',  ['uses' => 'ProbeController@store']);
         $router->get('user/{id}', ['uses' => 'ProbeController@getUser']);
         $router->put('{id}/toggle', ['uses' => 'ProbeController@toggleState']);
     });
 
     $router->group(['prefix' => 'measure'], function () use ($router) {
         $router->post('',  ['uses' => 'MeasureController@store']);
+    });
+
+    $router->group(['prefix' => 'user'], function () use ($router) {
+        $router->post('connect',  ['uses' => 'UserController@connect']);
+        $router->post('register',  ['uses' => 'UserController@register']);
     });
 
 });
