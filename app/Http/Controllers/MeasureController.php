@@ -21,23 +21,40 @@ class MeasureController extends Controller
         $post = $request->input();
 
         try {
-            $measure = Measure::create([
-                'probe'       => $post['probe'],
-                'temperature' => $post['temperature'],
-                'humidity'    => $post['humidity'],
-                'date'        => date('Y-m-d H:i:s')
-            ]);
+            $probe = Probe::find($post['probe']);
 
-            return response()->json(
-                [
-                    'response' => [
-                        'data' => $measure,
-                        'user' => User::find(Probe::find($post['probe'])->user)
+            if($probe->state) {
+                $measure = Measure::create([
+                    'probe'       => $post['probe'],
+                    'temperature' => $post['temperature'],
+                    'humidity'    => $post['humidity'],
+                    'date'        => date('Y-m-d H:i:s')
+                ]);
+    
+                return response()->json(
+                    [
+                        'response' => [
+                            'data' => $measure,
+                            'user' => User::find(Probe::find($post['probe'])->user)
+                        ],
+                        'error' => null
                     ],
-                    'error' => null
-                ],
-                201
-            );
+                    201
+                );
+            } else {
+                return response()->json(
+                    [
+                        'response' => [
+                            'data' => $probe,
+                            'user' => User::find(Probe::find($post['probe'])->user)
+                        ],
+                        'error' => "Probe state is disabled"
+                    ],
+                    400
+                );
+            }
+
+            
         } catch (\Exception $e) {
             return response()->json(
                 [
