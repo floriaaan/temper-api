@@ -33,6 +33,7 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
     $router->group(['prefix' => 'user'], function () use ($router) {
         $router->post('connect',  ['uses' => 'UserController@connect']);
         $router->post('register',  ['uses' => 'UserController@register']);
+        $router->get('infos/{id}',  ['uses' => 'UserController@get']);
     });
 
 });

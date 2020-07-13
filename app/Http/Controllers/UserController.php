@@ -74,11 +74,35 @@ class UserController extends Controller
                         'data' => [
                             'token' => $user->token,
                             'user' => $user
-                            ]
+                        ]
                     ],
                     'error' => null
                 ],
                 201
+            );
+        } catch (\Exception $e) {
+            return response()->json(
+                [
+                    'response' => null,
+                    'error'    => $e
+                ],
+                500
+            );
+        }
+    }
+
+    public function get($id)
+    {
+        try {
+            $user = User::find($id);
+            return response()->json(
+                [
+                    'response' => [
+                        'data' => $user
+                    ],
+                    'error' => null
+                ],
+                200
             );
         } catch (\Exception $e) {
             return response()->json(
