@@ -27,6 +27,7 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
     });
 
     $router->group(['prefix' => 'measure'], function () use ($router) {
+        $router->get('probe/{id}_limit={limit}',  ['uses' => 'MeasureController@probe']);
         $router->post('',  ['uses' => 'MeasureController@store']);
     });
 

@@ -29,7 +29,9 @@ class ProbeController extends Controller
                     'temperature' => $lastMeasure != null ? $lastMeasure->temperature : null,
                     'humidity' => $lastMeasure != null ? $lastMeasure->humidity : null,
                     'date' => $lastMeasure != null ? $lastMeasure->date : null
-                ]
+                ],
+                'created_at' => $probe->created_at,
+                'updated_at' => $probe->updated_at,
             ];
 
             return response()->json(
