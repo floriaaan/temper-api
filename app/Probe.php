@@ -13,7 +13,7 @@ class Probe extends Model
      * @var array
      */
     protected $fillable = [
-        'id', 'name', 'user', 'category', 'gps_lon', 'gps_lat', 'state'
+        'id', 'name', 'user', 'category', 'gps_lon', 'gps_lat', 'state', 'token'
     ];
 
     /**
@@ -22,4 +22,14 @@ class Probe extends Model
      * @var array
      */
     protected $hidden = [];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        // auto-sets values on creation
+        static::creating(function ($query) {
+            $query->token = bin2hex(random_bytes(6));
+        });
+    }
 }

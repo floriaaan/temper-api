@@ -18,11 +18,18 @@ class UserController extends Controller
 
         try {
             $user = User::where('name', $post['login'])->firstOrFail();
+            $user->isLogged = true;
+            $user->save();
+
+            $data = [
+                'user' => $user,
+                'token' => $user->token
+            ];
             if (password_verify($post['password'], $user->password)) {
                 return response()->json(
                     [
                         'response' => [
-                            'data' => $user->token
+                            'data' => $data
                         ],
                         'error' => null
                     ],
@@ -39,6 +46,42 @@ class UserController extends Controller
                     400
                 );
             }
+        } catch (\Exception $e) {
+            return response()->json(
+                [
+                    'response' => null,
+                    'error'    => $e
+                ],
+                500
+            );
+        }
+    }
+
+    public function logout(Request $request)
+    {
+        $this->validate($request, [
+            'token' => 'exists:users,token'
+        ]);
+        $post = $request->input();
+
+
+        try {
+            $user = User::where('token', $post['token'])->firstOrFail();
+            $user->isLogged = false;
+            $user->save();
+
+            $data = [
+                'user' => $user
+            ];
+            return response()->json(
+                [
+                    'response' => [
+                        'data' => $data
+                    ],
+                    'error' => null
+                ],
+                200
+            );
         } catch (\Exception $e) {
             return response()->json(
                 [

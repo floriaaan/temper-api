@@ -17,6 +17,7 @@ class CreateProbesTable extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->string('category')->nullable();
+            $table->string('token');
             $table->boolean('state')->default(1);
             $table->double('gps_lon')->nullable();
             $table->double('gps_lat')->nullable();

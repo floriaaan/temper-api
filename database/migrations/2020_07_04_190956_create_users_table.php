@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('password', 70);
             $table->string('token');
+            $table->boolean('isLogged')->default(false);
             $table->string('email')->nullable();
             $table->timestamps();
         });
