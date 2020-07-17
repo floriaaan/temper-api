@@ -6,7 +6,7 @@
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/release/floriaaan/temper-api" alt="Latest Release"></a>
 
 <p>
-    PHP version of Temper API, which serve the [Temper](https://github.com/floriaaan/temper) application.
+    PHP version of Temper API, which serve the <a href="https://github.com/floriaaan/temper">Temper</a> application.
 </p>
 
 ## Installation
@@ -27,9 +27,9 @@ php -S localhost:8000 -t public    // Launch the PHP developement server
 
 ## Based on Lumen Framework
 
-<p>Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).</p>
+<p>Documentation for the framework can be found on the <a href="https://lumen.laravel.com/docs">Lumen website</a>.</p>
 
-<p>The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).</p>
+<p>The Lumen framework is open-sourced software licensed under the <a href="https://opensource.org/licenses/MIT">MIT license</a>.</p>
 
 ## Contributing
 
