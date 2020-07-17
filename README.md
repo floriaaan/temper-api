@@ -5,16 +5,31 @@
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/forks/floriaaan/temper-api" alt="Forks"></a>
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/release/floriaaan/temper-api" alt="Latest Release"></a>
 
+<p>
+    PHP version of Temper API, which serve the [Temper](https://github.com/floriaaan/temper) application.
+</p>
+
+## Installation
+
+### Requirements
+
+* PHP >= 7.3
+* MySQL/ MariaDB
+* Composer
+
+### Guide
+
+```
+composer update                    // Install the dependencies (Lumen, ...)
+php -S localhost:8000 -t public    // Launch the PHP developement server
+
+```
 
 ## Based on Lumen Framework
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
-<br>
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-<br>
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-<br>
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p>Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).</p>
+
+<p>The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).</p>
 
 ## Contributing
 
