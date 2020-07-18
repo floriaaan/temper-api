@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/floriaaan/temper-api/issues"
   },
-  "homepage": "https://github.com/floriaaan/temper-api#readme"
+  "homepage": "https://github.com/floriaaan/temper-api#readme",
+  "devDependencies": {
+    "express-reload": "^1.2.0"
+  }
 }
