@@ -1,35 +1,32 @@
-# Temper API : PHP version
+# Temper API : Master branch
 
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/status/floriaaan/temper-api" alt="Build Status"></a>
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/stars/floriaaan/temper-api" alt="Stargazers"></a>
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/forks/floriaaan/temper-api" alt="Forks"></a>
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/release/floriaaan/temper-api" alt="Latest Release"></a>
 
-<p>
-    PHP version of Temper API, which serve the <a href="https://github.com/floriaaan/temper">Temper</a> application.
-</p>
+Temper API has **several version** of its services.
+You can choose the language you want, by **switching** the branch of this project you want or **downloading** the code of the branch.
 
 ## Installation
 
-### Requirements
-
-* PHP >= 7.3
-* MySQL/ MariaDB
-* Composer
-
-### Guide
+Switch to the version you want by executing the following command:
 
 ```
-composer update                    // Install the dependencies (Lumen, ...)
-php -S localhost:8000 -t public    // Launch the PHP developement server
-
+git checkout <version>      // <version> param is the following param
 ```
 
-## Based on Lumen Framework
+Downloading the branch:
 
-<p>Documentation for the framework can be found on the <a href="https://lumen.laravel.com/docs">Lumen website</a>.</p>
+```
+https://github.com/floriaaan/temper-api/archive/<version>.zip // eg: (https://github.com/floriaaan/temper-api/archive/php.zip)
+```
 
-<p>The Lumen framework is open-sourced software licensed under the <a href="https://opensource.org/licenses/MIT">MIT license</a>.</p>
+## Available versions
+
+*   PHP : branch = 'php'
+*   JS : branch = 'js'  
+
 
 ## Contributing
 
