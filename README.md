@@ -1,32 +1,36 @@
-# Temper API : Master branch
+# Temper API : JS version
 
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/status/floriaaan/temper-api" alt="Build Status"></a>
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/stars/floriaaan/temper-api" alt="Stargazers"></a>
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/forks/floriaaan/temper-api" alt="Forks"></a>
 <a href="https://github.com/floriaaan/temper-api"><img src="https://badgen.net/github/release/floriaaan/temper-api" alt="Latest Release"></a>
 
-Temper API has **several version** of its services.
-You can choose the language you want, by **switching** the branch of this project you want or **downloading** the code of the branch.
+<p>
+    JS version of Temper API, which serve the <a href="https://github.com/floriaaan/temper">Temper</a> application.
+</p>
 
 ## Installation
 
-Switch to the version you want by executing the following command:
+### Requirements
+
+* NodeJS
+* MySQL/ MariaDB
+
+### Guide
 
 ```
-git checkout <version>      // <version> param is the following param
-```
-
-Downloading the branch:
+npm install                        // Install the dependencies (ExpressJS, ...)
+npm run start                      // Launch the ExpressJS server
 
 ```
-https://github.com/floriaaan/temper-api/archive/<version>.zip // eg: (https://github.com/floriaaan/temper-api/archive/php.zip)
-```
 
-## Available versions
+## Based on ExpressJS
 
-*   PHP : branch = 'php'
-*   JS : branch = 'js'  
+The Express philosophy is to provide small, robust tooling for HTTP servers, making it a great solution for single page applications, web sites, hybrids, or public HTTP APIs.
 
+<p>Documentation for Express can be found on the <a href="http://expressjs.com/">Express website</a>.</p>
+
+<p>Express JS is open-sourced software licensed under the <a href="https://github.com/expressjs/express/blob/master/LICENSE">MIT license</a>.</p>
 
 ## Contributing
 
