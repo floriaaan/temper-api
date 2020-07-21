@@ -20,14 +20,14 @@ $router->get('/', function () use ($router) {
 $router->group(['prefix' => 'api/v1'], function () use ($router) {
 
     $router->group(['prefix' => 'probe'], function () use ($router) {
-        $router->get('{id}',  ['uses' => 'ProbeController@get']);
+        $router->get('{token}',  ['uses' => 'ProbeController@get']);
         $router->post('',  ['uses' => 'ProbeController@store']);
-        $router->get('user/{id}', ['uses' => 'ProbeController@getUser']);
-        $router->put('{id}/toggle', ['uses' => 'ProbeController@toggleState']);
+        $router->get('user/{token}', ['uses' => 'ProbeController@getUser']);
+        $router->put('{token}/toggle', ['uses' => 'ProbeController@toggleState']);
     });
 
     $router->group(['prefix' => 'measure'], function () use ($router) {
-        $router->get('probe/{id}_limit={limit}',  ['uses' => 'MeasureController@probe']);
+        $router->get('probe/{token}_limit={limit}',  ['uses' => 'MeasureController@probe']);
         $router->post('',  ['uses' => 'MeasureController@store']);
     });
 
@@ -35,7 +35,7 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
         $router->post('connect',  ['uses' => 'UserController@connect']);
         $router->post('logout',  ['uses' => 'UserController@logout']);
         $router->post('register',  ['uses' => 'UserController@register']);
-        $router->get('infos/{id}',  ['uses' => 'UserController@get']);
+        $router->get('infos/{token}',  ['uses' => 'UserController@get']);
     });
 
 });

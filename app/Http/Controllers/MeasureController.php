@@ -64,21 +64,22 @@ class MeasureController extends Controller
         }
     }
 
-    public function probe($id, $limit = 0)
+    public function probe($token, $limit = 0)
     {
 
         try {
-            $list = Measure::where('probe', $id)
-            ->orderBy('id', 'desc')
-            ->limit($limit)
-            ->get();
+            $probe = Probe::where('token', $token)->firstOrFail();
+            $list = Measure::where('probe', $probe->id)
+                ->orderBy('id', 'desc')
+                ->limit($limit)
+                ->get();
 
 
             return response()->json(
                 [
                     'response' => [
                         'data' => $list,
-                        'user' => User::find(Probe::find($id)->user)
+                        'user' => User::find($probe->user)
                     ],
                     'error' => null
                 ],

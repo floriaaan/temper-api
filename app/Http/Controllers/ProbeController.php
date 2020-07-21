@@ -10,11 +10,11 @@ use Illuminate\Http\Request;
 class ProbeController extends Controller
 {
 
-    public function get($id)
+    public function get($token)
     {
         try {
-            $probe = Probe::find($id);
-            $lastMeasure = Measure::where('probe', $id)->orderBy('id', 'desc')->first();
+            $probe = Probe::where('token', $token)->firstOrFail();
+            $lastMeasure = Measure::where('probe', $probe->id)->orderBy('id', 'desc')->first();
 
             $data = [
                 'id' => $probe->id,
@@ -55,15 +55,17 @@ class ProbeController extends Controller
         }
     }
 
-    public function getUser($id)
+    public function getUser($token)
     {
 
         try {
-            $probes = Probe::where('user', $id)->get();
+            $user = User::where('token', $token)->firstOrFail();
+
+            $probes = Probe::where('user', $user->id)->get();
             $list = [];
 
             foreach ($probes as $probe) {
-                $list[] = $probe->id;
+                $list[] = $probe->token;
             }
 
 
@@ -72,7 +74,7 @@ class ProbeController extends Controller
                 [
                     'response' => [
                         'data' => $list,
-                        'user' => User::find($id)
+                        'user' => $user
                     ],
                     'error' => null
                 ],
@@ -89,10 +91,10 @@ class ProbeController extends Controller
         }
     }
 
-    public function toggleState($id)
+    public function toggleState($token)
     {
         try {
-            $probe = Probe::find($id);
+            $probe = Probe::where('token', $token)->firstOrFail();
             $probe->state = !$probe->state;
             $probe->save();
             
