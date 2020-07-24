@@ -9,15 +9,19 @@ class UserController extends Controller
 {
     public function connect(Request $request)
     {
+        
         $this->validate($request, [
             'login' => 'exists:users,name',
             'password' => 'required'
         ]);
+        
         $post = $request->input();
 
 
         try {
+            
             $user = User::where('name', $post['login'])->firstOrFail();
+            
             $user->isLogged = true;
             $user->save();
 
@@ -25,6 +29,7 @@ class UserController extends Controller
                 'user' => $user,
                 'token' => $user->token
             ];
+            
             if (password_verify($post['password'], $user->password)) {
                 return response()->json(
                     [

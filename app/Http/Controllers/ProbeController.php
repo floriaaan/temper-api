@@ -25,6 +25,7 @@ class ProbeController extends Controller
                     'lon' => $probe->gps_lon,
                     'lat' => $probe->gps_lat
                 ],
+                'token' => $probe->token,
                 'lastmeasure' => [
                     'temperature' => $lastMeasure != null ? $lastMeasure->temperature : null,
                     'humidity' => $lastMeasure != null ? $lastMeasure->humidity : null,
@@ -162,5 +163,33 @@ class ProbeController extends Controller
             );
         }
 
+    }
+
+    public function getOwner($token)
+    {
+        try {
+            $probe = Probe::where('token', $token)->firstOrFail();
+            $user = User::find($probe->user);
+
+            
+
+            return response()->json(
+                [
+                    'response' => [
+                        'data' => $user
+                    ],
+                    'error' => null
+                ],
+                200
+            );
+        } catch (\Exception $e) {
+            return response()->json(
+                [
+                    'response' => null,
+                    'error'    => $e
+                ],
+                500
+            );
+        }
     }
 }

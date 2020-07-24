@@ -24,6 +24,7 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
         $router->post('',  ['uses' => 'ProbeController@store']);
         $router->get('user/{token}', ['uses' => 'ProbeController@getUser']);
         $router->put('{token}/toggle', ['uses' => 'ProbeController@toggleState']);
+        $router->get('{token}/owner',  ['uses' => 'ProbeController@getOwner']);
     });
 
     $router->group(['prefix' => 'measure'], function () use ($router) {

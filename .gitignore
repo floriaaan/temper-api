@@ -1,6 +1,10 @@
 /vendor
+^prpr/.idea
+Homestead.json
+Homestead.yaml
 .env
+.phpunit.result.cache
+
 composer.lock
 
 /node_modules
-.env
