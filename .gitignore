@@ -1,5 +1,5 @@
 /vendor
-^prpr/.idea
+/.idea
 Homestead.json
 Homestead.yaml
 .env

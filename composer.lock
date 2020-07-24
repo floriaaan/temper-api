@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4be8fced66fbffeff2568a82e343bfc0",
+    "content-hash": "30f3721410bb38123789932b3fd1f8d0",
     "packages": [
         {
             "name": "brick/math",
@@ -347,7 +347,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/auth/aef766aa6c094c68db2164d88133fc64dfe85ed3",
+                "url": "https://api.github.com/repos/illuminate/auth/zipball/aef766aa6c094c68db2164d88133fc64dfe85ed3",
                 "reference": "aef766aa6c094c68db2164d88133fc64dfe85ed3",
                 "shasum": ""
             },
@@ -374,6 +374,7 @@
                     "Illuminate\\Auth\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -397,7 +398,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/broadcasting/9d00720f6c381824250dbca538b629877bfb2cd3",
+                "url": "https://api.github.com/repos/illuminate/broadcasting/zipball/9d00720f6c381824250dbca538b629877bfb2cd3",
                 "reference": "9d00720f6c381824250dbca538b629877bfb2cd3",
                 "shasum": ""
             },
@@ -424,6 +425,7 @@
                     "Illuminate\\Broadcasting\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -447,7 +449,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/bus/189204f93889677bfc4aec2a3d2c7aa94c76c240",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/189204f93889677bfc4aec2a3d2c7aa94c76c240",
                 "reference": "189204f93889677bfc4aec2a3d2c7aa94c76c240",
                 "shasum": ""
             },
@@ -471,6 +473,7 @@
                     "Illuminate\\Bus\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -494,7 +497,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/cache/b28b43e1cd4f7a336a68b64d64ff4809838bade9",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/b28b43e1cd4f7a336a68b64d64ff4809838bade9",
                 "reference": "b28b43e1cd4f7a336a68b64d64ff4809838bade9",
                 "shasum": ""
             },
@@ -521,6 +524,7 @@
                     "Illuminate\\Cache\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -544,7 +548,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/config/d1e898de7a0cefe9ce2c94dede6679839e6a7b39",
+                "url": "https://api.github.com/repos/illuminate/config/zipball/d1e898de7a0cefe9ce2c94dede6679839e6a7b39",
                 "reference": "d1e898de7a0cefe9ce2c94dede6679839e6a7b39",
                 "shasum": ""
             },
@@ -564,6 +568,7 @@
                     "Illuminate\\Config\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -587,7 +592,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/console/12b52d7fd87719a3cabf3f269c14c0c496e78a1a",
+                "url": "https://api.github.com/repos/illuminate/console/zipball/12b52d7fd87719a3cabf3f269c14c0c496e78a1a",
                 "reference": "12b52d7fd87719a3cabf3f269c14c0c496e78a1a",
                 "shasum": ""
             },
@@ -617,6 +622,7 @@
                     "Illuminate\\Console\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -640,7 +646,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/container/8fbbfd2df2b0850a7cb1240506aa77f3d150f136",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/8fbbfd2df2b0850a7cb1240506aa77f3d150f136",
                 "reference": "8fbbfd2df2b0850a7cb1240506aa77f3d150f136",
                 "shasum": ""
             },
@@ -663,6 +669,7 @@
                     "Illuminate\\Container\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -686,7 +693,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/contracts/37a76782aef1bb83680143c4283b1bf3db751e96",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/37a76782aef1bb83680143c4283b1bf3db751e96",
                 "reference": "37a76782aef1bb83680143c4283b1bf3db751e96",
                 "shasum": ""
             },
@@ -706,6 +713,7 @@
                     "Illuminate\\Contracts\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -729,7 +737,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/database/cd4c0057ea0c4cd2cb4e075b4bd2cc762cf7c9d9",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/cd4c0057ea0c4cd2cb4e075b4bd2cc762cf7c9d9",
                 "reference": "cd4c0057ea0c4cd2cb4e075b4bd2cc762cf7c9d9",
                 "shasum": ""
             },
@@ -761,6 +769,7 @@
                     "Illuminate\\Database\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -790,7 +799,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/encryption/acf3f9f52a9abcb46e9c50911bb8f1c37d10edcb",
+                "url": "https://api.github.com/repos/illuminate/encryption/zipball/acf3f9f52a9abcb46e9c50911bb8f1c37d10edcb",
                 "reference": "acf3f9f52a9abcb46e9c50911bb8f1c37d10edcb",
                 "shasum": ""
             },
@@ -813,6 +822,7 @@
                     "Illuminate\\Encryption\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -836,7 +846,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/events/14b21444c04c3052cffbd76e0862b23fdae5fc19",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/14b21444c04c3052cffbd76e0862b23fdae5fc19",
                 "reference": "14b21444c04c3052cffbd76e0862b23fdae5fc19",
                 "shasum": ""
             },
@@ -857,6 +867,7 @@
                     "Illuminate\\Events\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -880,7 +891,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/filesystem/73082c13a2e544c80f55b669a781e01d0627eaab",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/73082c13a2e544c80f55b669a781e01d0627eaab",
                 "reference": "73082c13a2e544c80f55b669a781e01d0627eaab",
                 "shasum": ""
             },
@@ -911,6 +922,7 @@
                     "Illuminate\\Filesystem\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -934,7 +946,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/hashing/21aeeb27e608b8026c510688b8624ccaad7cf499",
+                "url": "https://api.github.com/repos/illuminate/hashing/zipball/21aeeb27e608b8026c510688b8624ccaad7cf499",
                 "reference": "21aeeb27e608b8026c510688b8624ccaad7cf499",
                 "shasum": ""
             },
@@ -954,6 +966,7 @@
                     "Illuminate\\Hashing\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -977,7 +990,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/http/45827b5de9e5c85338341cb69adb1276f8ad390f",
+                "url": "https://api.github.com/repos/illuminate/http/zipball/45827b5de9e5c85338341cb69adb1276f8ad390f",
                 "reference": "45827b5de9e5c85338341cb69adb1276f8ad390f",
                 "shasum": ""
             },
@@ -1005,6 +1018,7 @@
                     "Illuminate\\Http\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1028,7 +1042,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/log/53c5e2b2ffbf5138488893d3c2a3a249de4a5b7b",
+                "url": "https://api.github.com/repos/illuminate/log/zipball/53c5e2b2ffbf5138488893d3c2a3a249de4a5b7b",
                 "reference": "53c5e2b2ffbf5138488893d3c2a3a249de4a5b7b",
                 "shasum": ""
             },
@@ -1049,6 +1063,7 @@
                     "Illuminate\\Log\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1072,7 +1087,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/pagination/58d6613e19d0923a85a228289de1736452285e1b",
+                "url": "https://api.github.com/repos/illuminate/pagination/zipball/58d6613e19d0923a85a228289de1736452285e1b",
                 "reference": "58d6613e19d0923a85a228289de1736452285e1b",
                 "shasum": ""
             },
@@ -1093,6 +1108,7 @@
                     "Illuminate\\Pagination\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1116,7 +1132,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/pipeline/1a7ef33dec9cbb73757f0654ae48d997944a4d3f",
+                "url": "https://api.github.com/repos/illuminate/pipeline/zipball/1a7ef33dec9cbb73757f0654ae48d997944a4d3f",
                 "reference": "1a7ef33dec9cbb73757f0654ae48d997944a4d3f",
                 "shasum": ""
             },
@@ -1136,6 +1152,7 @@
                     "Illuminate\\Pipeline\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1159,7 +1176,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/queue/9b8acacf51a4ae8487eb7470edcd6031ca161033",
+                "url": "https://api.github.com/repos/illuminate/queue/zipball/9b8acacf51a4ae8487eb7470edcd6031ca161033",
                 "reference": "9b8acacf51a4ae8487eb7470edcd6031ca161033",
                 "shasum": ""
             },
@@ -1195,6 +1212,7 @@
                     "Illuminate\\Queue\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1218,7 +1236,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/session/dbd4c4b519a0c0c3288549f3d360c89b8f12ce9e",
+                "url": "https://api.github.com/repos/illuminate/session/zipball/dbd4c4b519a0c0c3288549f3d360c89b8f12ce9e",
                 "reference": "dbd4c4b519a0c0c3288549f3d360c89b8f12ce9e",
                 "shasum": ""
             },
@@ -1245,6 +1263,7 @@
                     "Illuminate\\Session\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1268,7 +1287,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/support/79bbfdf2cd58a3ca2daa015e523a8e0351cccd01",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/79bbfdf2cd58a3ca2daa015e523a8e0351cccd01",
                 "reference": "79bbfdf2cd58a3ca2daa015e523a8e0351cccd01",
                 "shasum": ""
             },
@@ -1306,6 +1325,7 @@
                     "helpers.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1329,7 +1349,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/testing/3a7b3cbcf8ee96e9d5ca0d7cd3f991f8d375b2e4",
+                "url": "https://api.github.com/repos/illuminate/testing/zipball/3a7b3cbcf8ee96e9d5ca0d7cd3f991f8d375b2e4",
                 "reference": "3a7b3cbcf8ee96e9d5ca0d7cd3f991f8d375b2e4",
                 "shasum": ""
             },
@@ -1357,6 +1377,7 @@
                     "Illuminate\\Testing\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1380,7 +1401,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/translation/74c6c0c15efc2a3e1a7e8b893dcbe68007467ea6",
+                "url": "https://api.github.com/repos/illuminate/translation/zipball/74c6c0c15efc2a3e1a7e8b893dcbe68007467ea6",
                 "reference": "74c6c0c15efc2a3e1a7e8b893dcbe68007467ea6",
                 "shasum": ""
             },
@@ -1402,6 +1423,7 @@
                     "Illuminate\\Translation\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1425,7 +1447,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/validation/4c36e967721c55d02678d27718cfbd07c9ef25b5",
+                "url": "https://api.github.com/repos/illuminate/validation/zipball/4c36e967721c55d02678d27718cfbd07c9ef25b5",
                 "reference": "4c36e967721c55d02678d27718cfbd07c9ef25b5",
                 "shasum": ""
             },
@@ -1454,6 +1476,7 @@
                     "Illuminate\\Validation\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1477,7 +1500,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/illuminate/view/ac9f95e4261383ab691c3054a54133ec9a491fa6",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/ac9f95e4261383ab691c3054a54133ec9a491fa6",
                 "reference": "ac9f95e4261383ab691c3054a54133ec9a491fa6",
                 "shasum": ""
             },
@@ -1501,6 +1524,7 @@
                     "Illuminate\\View\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1524,7 +1548,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/laravel/lumen-framework/8e0d54c17a81fb2c6815d2c656f59913047b8d69",
+                "url": "https://api.github.com/repos/laravel/lumen-framework/zipball/8e0d54c17a81fb2c6815d2c656f59913047b8d69",
                 "reference": "8e0d54c17a81fb2c6815d2c656f59913047b8d69",
                 "shasum": ""
             },
@@ -1586,6 +1610,7 @@
                     "src/helpers.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1603,6 +1628,44 @@
                 "lumen"
             ],
             "time": "2020-07-21T18:36:31+00:00"
+        },
+        {
+            "name": "mlntn/lumen-artisan-serve",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlntn/lumen-artisan-serve.git",
+                "reference": "554c5ce862f92a92895cf05bf25ba04f21ca8714"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlntn/lumen-artisan-serve/zipball/554c5ce862f92a92895cf05bf25ba04f21ca8714",
+                "reference": "554c5ce862f92a92895cf05bf25ba04f21ca8714",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jared Mellentine",
+                    "email": "jared@mellentine.com"
+                }
+            ],
+            "description": "artisan serve for Lumen projects",
+            "homepage": "http://github.com/mlntn/lumen-artisan-serve",
+            "keywords": [
+                "artisan",
+                "lumen"
+            ],
+            "time": "2018-05-28T02:23:21+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1705,7 +1768,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/briannesbitt/Carbon/ee7378a36cc62952100e718bcc58be4c7210e55f",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ee7378a36cc62952100e718bcc58be4c7210e55f",
                 "reference": "ee7378a36cc62952100e718bcc58be4c7210e55f",
                 "shasum": ""
             },
@@ -1750,6 +1813,7 @@
                     "Carbon\\": "src/Carbon/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1900,7 +1964,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/paragonie/random_compat/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
                 "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
                 "shasum": ""
             },
@@ -1915,6 +1979,7 @@
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1944,7 +2009,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/schmittjoh/php-option/994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
                 "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
                 "shasum": ""
             },
@@ -1966,6 +2031,7 @@
                     "PhpOption\\": "src/PhpOption/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -2439,7 +2505,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/deprecation-contracts/5e20b83385a77593259c9f8beb2c43cd03b2ac14",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5e20b83385a77593259c9f8beb2c43cd03b2ac14",
                 "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14",
                 "shasum": ""
             },
@@ -2461,6 +2527,7 @@
                     "function.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2659,7 +2726,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/event-dispatcher-contracts/f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
                 "reference": "f6f613d74cfc5a623fc36294d3451eb7fa5a042b",
                 "shasum": ""
             },
@@ -2685,6 +2752,7 @@
                     "Symfony\\Contracts\\EventDispatcher\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3062,7 +3130,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-ctype/1c302646f6efc070cd46856e600e5e0684d6b454",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/1c302646f6efc070cd46856e600e5e0684d6b454",
                 "reference": "1c302646f6efc070cd46856e600e5e0684d6b454",
                 "shasum": ""
             },
@@ -3090,6 +3158,7 @@
                     "bootstrap.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3137,7 +3206,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-intl-grapheme/b740103edbdcc39602239ee8860f0f45a8eb9aa5",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/b740103edbdcc39602239ee8860f0f45a8eb9aa5",
                 "reference": "b740103edbdcc39602239ee8860f0f45a8eb9aa5",
                 "shasum": ""
             },
@@ -3165,6 +3234,7 @@
                     "bootstrap.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3214,7 +3284,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-intl-idn/bc6549d068d0160e0f10f7a5a23c7d1406b95ebe",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/bc6549d068d0160e0f10f7a5a23c7d1406b95ebe",
                 "reference": "bc6549d068d0160e0f10f7a5a23c7d1406b95ebe",
                 "shasum": ""
             },
@@ -3245,6 +3315,7 @@
                     "bootstrap.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3298,7 +3369,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-intl-normalizer/37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
                 "reference": "37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
                 "shasum": ""
             },
@@ -3329,6 +3400,7 @@
                     "Resources/stubs"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3378,7 +3450,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-mbstring/a6977d63bf9a0ad4c65cd352709e230876f9904a",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/a6977d63bf9a0ad4c65cd352709e230876f9904a",
                 "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a",
                 "shasum": ""
             },
@@ -3406,6 +3478,7 @@
                     "bootstrap.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3454,7 +3527,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-php70/0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
+                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
                 "reference": "0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
                 "shasum": ""
             },
@@ -3483,6 +3556,7 @@
                     "Resources/stubs"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3530,7 +3604,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-php72/639447d008615574653fb3bc60d1986d7172eaae",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/639447d008615574653fb3bc60d1986d7172eaae",
                 "reference": "639447d008615574653fb3bc60d1986d7172eaae",
                 "shasum": ""
             },
@@ -3555,6 +3629,7 @@
                     "bootstrap.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3602,7 +3677,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-php73/fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
                 "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
                 "shasum": ""
             },
@@ -3630,6 +3705,7 @@
                     "Resources/stubs"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3677,7 +3753,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/polyfill-php80/d87d5766cbf48d72388a9f6b85f280c8ad51f981",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/d87d5766cbf48d72388a9f6b85f280c8ad51f981",
                 "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981",
                 "shasum": ""
             },
@@ -3705,6 +3781,7 @@
                     "Resources/stubs"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3820,7 +3897,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/service-contracts/58c7475e5457c5492c26cc740cc0ad7464be9442",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/58c7475e5457c5492c26cc740cc0ad7464be9442",
                 "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442",
                 "shasum": ""
             },
@@ -3846,6 +3923,7 @@
                     "Symfony\\Contracts\\Service\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4072,7 +4150,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/symfony/translation-contracts/616a9773c853097607cf9dd6577d5b143ffdcd63",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/616a9773c853097607cf9dd6577d5b143ffdcd63",
                 "reference": "616a9773c853097607cf9dd6577d5b143ffdcd63",
                 "shasum": ""
             },
@@ -4097,6 +4175,7 @@
                     "Symfony\\Contracts\\Translation\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4236,7 +4315,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/vlucas/phpdotenv/572af79d913627a9d70374d27a6f5d689a35de32",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/572af79d913627a9d70374d27a6f5d689a35de32",
                 "reference": "572af79d913627a9d70374d27a6f5d689a35de32",
                 "shasum": ""
             },
@@ -4266,6 +4345,7 @@
                     "Dotenv\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4497,7 +4577,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/hamcrest/hamcrest-php/8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
+                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
                 "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
                 "shasum": ""
             },
@@ -4524,6 +4604,7 @@
                     "hamcrest"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4543,7 +4624,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/mockery/mockery/1404386ca3410b04fe58b9517e85d702ab33b2c6",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/1404386ca3410b04fe58b9517e85d702ab33b2c6",
                 "reference": "1404386ca3410b04fe58b9517e85d702ab33b2c6",
                 "shasum": ""
             },
@@ -4569,6 +4650,7 @@
                     "Mockery": "library/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4815,7 +4897,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/phpDocumentor/ReflectionDocBlock/3170448f5769fe19f456173d833734e0ff1b84df",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/3170448f5769fe19f456173d833734e0ff1b84df",
                 "reference": "3170448f5769fe19f456173d833734e0ff1b84df",
                 "shasum": ""
             },
@@ -4840,6 +4922,7 @@
                     "phpDocumentor\\Reflection\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4911,7 +4994,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/phpspec/prophecy/b20034be5efcdab4fb60ca3a29cba2949aead160",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/b20034be5efcdab4fb60ca3a29cba2949aead160",
                 "reference": "b20034be5efcdab4fb60ca3a29cba2949aead160",
                 "shasum": ""
             },
@@ -4937,6 +5020,7 @@
                     "Prophecy\\": "src/Prophecy"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5933,7 +6017,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/theseer/tokenizer/75a63c33a8577608444246075ea0af0d052e452a",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/75a63c33a8577608444246075ea0af0d052e452a",
                 "reference": "75a63c33a8577608444246075ea0af0d052e452a",
                 "shasum": ""
             },
@@ -5949,6 +6033,7 @@
                     "src/"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5978,7 +6063,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://artifactory-principale.enedis.fr/artifactory/api/composer/remote-packagist-php/vcs-dists/zip/webmozart/assert/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -5999,6 +6084,7 @@
                     "Webmozart\\Assert\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
