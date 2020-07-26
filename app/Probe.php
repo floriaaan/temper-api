@@ -21,7 +21,9 @@ class Probe extends Model
      *
      * @var array
      */
-    protected $hidden = [];
+    protected $hidden = [
+        'share_token'
+    ];
 
     protected static function boot()
     {
@@ -30,6 +32,7 @@ class Probe extends Model
         // auto-sets values on creation
         static::creating(function ($query) {
             $query->token = bin2hex(random_bytes(6));
+            $query->share_token = bin2hex(random_bytes(8));
         });
     }
 }

@@ -39,4 +39,8 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
         $router->get('infos/{token}',  ['uses' => 'UserController@get']);
     });
 
+    $router->group(['prefix' => 'share'], function () use ($router) {
+        $router->post('token',  ['uses' => 'ShareController@token_probe']);
+    });
+
 });

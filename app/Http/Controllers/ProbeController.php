@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Measure;
+use App\Share;
 use App\Probe;
 use App\User;
 use Illuminate\Http\Request;
@@ -63,10 +64,15 @@ class ProbeController extends Controller
             $user = User::where('token', $token)->firstOrFail();
 
             $probes = Probe::where('user', $user->id)->get();
+            $shares = Share::where('user', $user->id)->where('item_type', '=', 'probe')->get();
             $list = [];
 
             foreach ($probes as $probe) {
                 $list[] = $probe->token;
+            }
+
+            foreach ($shares as $share) {
+                $list[] = $share->item_token;
             }
 
 
@@ -98,7 +104,7 @@ class ProbeController extends Controller
             $probe = Probe::where('token', $token)->firstOrFail();
             $probe->state = !$probe->state;
             $probe->save();
-            
+
             return response()->json(
                 [
                     'response' => [
@@ -120,16 +126,18 @@ class ProbeController extends Controller
         }
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
         $this->validate($request, [
             'name' => '',
-            'user' => 'exists:users,id|required',
+            'user' => 'exists:users,token|required',
             'category' => '',
             'gps_lon' => '',
             'gps_lat' => '',
         ]);
 
         $post = $request->input();
+        $user = User::where('token', $post['user'])->firstOrFail();
 
         try {
             $probe = new Probe();
@@ -139,15 +147,15 @@ class ProbeController extends Controller
             $probe->gps_lon = (isset($post['gps_lon']) && $post['gps_lon'] != '') ? $post['gps_lon'] : null;
             $probe->gps_lat = (isset($post['gps_lat']) && $post['gps_lat'] != '') ? $post['gps_lat'] : null;
 
-            $probe->user = $post['user'];
+            $probe->user = $user->id;
 
             $probe->save();
-            
+
             return response()->json(
                 [
                     'response' => [
                         'data' => $probe,
-                        'user' => User::find($probe->user)
+                        'user' => $user
                     ],
                     'error' => null
                 ],
@@ -162,7 +170,6 @@ class ProbeController extends Controller
                 500
             );
         }
-
     }
 
     public function getOwner($token)
@@ -171,7 +178,7 @@ class ProbeController extends Controller
             $probe = Probe::where('token', $token)->firstOrFail();
             $user = User::find($probe->user);
 
-            
+
 
             return response()->json(
                 [
