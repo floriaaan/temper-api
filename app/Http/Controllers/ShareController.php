@@ -23,24 +23,51 @@ class ShareController extends Controller
             $user = User::where('token', $post['user'])->firstOrFail();
             $probe = Probe::where('share_token', $post['share'])->firstOrFail();
 
-            $share = Share::create([
-                'item_type' => 'probe',
-                'item_token' => $probe->token,
-                'duration' => 'always',
-                'date' => date('Y-m-d H:i:s'),
-                'user' => $user->id
-            ]);
-            
-            return response()->json(
-                [
-                    'response' => [
-                        'data' => $share,
-                        'user' => $user
+            if(!Share::where('user', $user->id)->where('item_token', $probe->token)->exists() && $probe->user != $user->id){
+                $share = Share::create([
+                    'item_type' => 'probe',
+                    'item_token' => $probe->token,
+                    'duration' => 'always',
+                    'date' => date('Y-m-d H:i:s'),
+                    'user' => $user->id
+                ]);
+                return response()->json(
+                    [
+                        'response' => [
+                            'data' => $share,
+                            'user' => $user
+                        ],
+                        'error' => null
                     ],
-                    'error' => null
-                ],
-                201
-            );
+                    201
+                );
+            } else if ($probe->user == $user->id) {
+                return response()->json(
+                    [
+                        'response' => [
+                            'data' => null,
+                            'user' => $user
+                        ],
+                        'error' => "Probe's owner is the user requesting this probe"
+                    ],
+                    400
+                );
+            
+            } else {
+                return response()->json(
+                    [
+                        'response' => [
+                            'data' => null,
+                            'user' => $user
+                        ],
+                        'error' => "Share access already exists"
+                    ],
+                    400
+                );
+            }
+            
+            
+            
         } catch (\Exception $e) {
             return response()->json(
                 [
