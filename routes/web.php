@@ -27,6 +27,12 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
         $router->get('{token}/owner',  ['uses' => 'ProbeController@getOwner']);
     });
 
+    $router->group(['prefix' => 'place'], function () use ($router) {
+        $router->post('{token}',  ['uses' => 'PlaceController@get']);
+        $router->post('',  ['uses' => 'PlaceController@store']);
+        $router->get('user/{token}', ['uses' => 'PlaceController@getUser']);
+    });
+
     $router->group(['prefix' => 'measure'], function () use ($router) {
         $router->get('probe/{token}_limit={limit}',  ['uses' => 'MeasureController@probe']);
         $router->post('',  ['uses' => 'MeasureController@store']);
