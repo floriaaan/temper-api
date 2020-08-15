@@ -113,4 +113,39 @@ class PlaceController extends Controller
             );
         }
     }
+
+
+    public function delete(Request $request)
+    {
+        $this->validate($request, [
+            '_token' => 'exists:places,token'
+        ]);
+
+        $token = $request->input('_token');
+
+        try {
+            $place = Place::where('token', $token)->firstOrFail();
+            $place->delete();
+            
+
+            return response()->json(
+                [
+                    'response' => [
+                        'data' => "deleted",
+                        'user' => $user
+                    ],
+                    'error' => null
+                ],
+                200
+            );
+        } catch (\Exception $e) {
+            return response()->json(
+                [
+                    'response' => null,
+                    'error'    => $e
+                ],
+                500
+            );
+        }
+    }
 }

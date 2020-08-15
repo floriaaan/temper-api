@@ -31,6 +31,7 @@ $router->group(['prefix' => 'api/v1'], function () use ($router) {
         $router->post('{token}',  ['uses' => 'PlaceController@get']);
         $router->post('',  ['uses' => 'PlaceController@store']);
         $router->get('user/{token}', ['uses' => 'PlaceController@getUser']);
+        $router->delete('', ['uses' => 'PlaceController@delete']);
     });
 
     $router->group(['prefix' => 'measure'], function () use ($router) {
