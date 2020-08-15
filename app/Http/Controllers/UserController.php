@@ -11,7 +11,7 @@ class UserController extends Controller
     {
         
         $this->validate($request, [
-            'login' => 'exists:users,name',
+            'login' => 'exists:users,email',
             'password' => 'required'
         ]);
         
@@ -20,7 +20,7 @@ class UserController extends Controller
 
         try {
             
-            $user = User::where('name', $post['login'])->firstOrFail();
+            $user = User::where('email', $post['login'])->firstOrFail();
             
             $user->isLogged = true;
             $user->save();
@@ -101,19 +101,18 @@ class UserController extends Controller
     public function register(Request $request)
     {
         $this->validate($request, [
-            'login' => 'unique:users,name',
+            'login' => 'required',
             'password' => 'required|confirmed',
             'password_confirmation' => 'required',
-            'email' => 'email'
+            'email' => 'email|required|unique:users,email'
         ]);
         $post = $request->input();
 
 
         try {
-            $email = isset($post['email']) && $post['email'] != '' ? $post['email'] : null;
             $user = new User();
             $user->name = $post['login'];
-            $user->email = $email;
+            $user->email = $post['email'];
 
             $user->password($post['password']);
             return response()->json(
